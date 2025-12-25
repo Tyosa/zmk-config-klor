@@ -1,0 +1,66 @@
+/*
+ * Copyright (c) 2025 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <physical_layouts.dtsi>
+
+/ {
+    // Polydactyl layout (default 42-key layout)
+    polydactyl_layout: polydactyl_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Polydactyl";
+        
+        transform = <&polydactyl_transform>;
+        kscan = <&kscan0>;
+        
+        keys  //                     w   h    x    y     r    rx   ry
+            = <&key_physical_attrs 100 100    0   37     0     0    0>
+            , <&key_physical_attrs 100 100  100   12     0     0    0>
+            , <&key_physical_attrs 100 100  200    0     0     0    0>
+            , <&key_physical_attrs 100 100  300   12     0     0    0>
+            , <&key_physical_attrs 100 100  400   24     0     0    0>
+            , <&key_physical_attrs 100 100  500   36     0     0    0>
+            , <&key_physical_attrs 100 100  900   36     0     0    0>
+            , <&key_physical_attrs 100 100 1000   24     0     0    0>
+            , <&key_physical_attrs 100 100 1100   12     0     0    0>
+            , <&key_physical_attrs 100 100 1200    0     0     0    0>
+            , <&key_physical_attrs 100 100 1300   12     0     0    0>
+            , <&key_physical_attrs 100 100 1400   37     0     0    0>
+            , <&key_physical_attrs 100 100    0  137     0     0    0>
+            , <&key_physical_attrs 100 100  100  112     0     0    0>
+            , <&key_physical_attrs 100 100  200  100     0     0    0>
+            , <&key_physical_attrs 100 100  300  112     0     0    0>
+            , <&key_physical_attrs 100 100  400  124     0     0    0>
+            , <&key_physical_attrs 100 100  500  136     0     0    0>
+            , <&key_physical_attrs 100 100  900  136     0     0    0>
+            , <&key_physical_attrs 100 100 1000  124     0     0    0>
+            , <&key_physical_attrs 100 100 1100  112     0     0    0>
+            , <&key_physical_attrs 100 100 1200  100     0     0    0>
+            , <&key_physical_attrs 100 100 1300  112     0     0    0>
+            , <&key_physical_attrs 100 100 1400  137     0     0    0>
+            , <&key_physical_attrs 100 100    0  237     0     0    0>
+            , <&key_physical_attrs 100 100  100  212     0     0    0>
+            , <&key_physical_attrs 100 100  200  200     0     0    0>
+            , <&key_physical_attrs 100 100  300  212     0     0    0>
+            , <&key_physical_attrs 100 100  400  224     0     0    0>
+            , <&key_physical_attrs 100 100  500  236     0     0    0>
+            , <&key_physical_attrs 100 100  900  236     0     0    0>
+            , <&key_physical_attrs 100 100 1000  224     0     0    0>
+            , <&key_physical_attrs 100 100 1100  212     0     0    0>
+            , <&key_physical_attrs 100 100 1200  200     0     0    0>
+            , <&key_physical_attrs 100 100 1300  212     0     0    0>
+            , <&key_physical_attrs 100 100 1400  237     0     0    0>
+            , <&key_physical_attrs 100 100  300  324  1500   350  375>
+            , <&key_physical_attrs 100 100  400  324  1500   350  375>
+            , <&key_physical_attrs 100 100  500  324  1500   350  375>
+            , <&key_physical_attrs 100 100  900  324 (1500)  1050  375>
+            , <&key_physical_attrs 100 100 1000  324 (1500)  1050  375>
+            , <&key_physical_attrs 100 100 1100  324 (1500)  1050  375>
+            ;
+    };
+    
+    // Add more layouts here for other KLOR variants (Konrad, Yubitsume, Saegewerk)
+    // if needed - just follow the same pattern
+};
