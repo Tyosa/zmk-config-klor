@@ -6,7 +6,19 @@
 
 #include "klor.dtsi"
 
-&default_transform {
+&polydactyl_transform {
+	col-offset = <6>;
+};
+
+&konrad_transform {
+	col-offset = <6>;
+};
+
+&yubitsume_transform {
+	col-offset = <6>;
+};
+
+&saegewerk_transform {
 	col-offset = <6>;
 };
 
